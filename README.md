@@ -2,6 +2,8 @@
 
 This repository contains homework assignments for the Visual Analytics course during the academic year 2023/24, taught by Professor Giuseppe Santucci @ Sapienza University of Rome, Master in Engineering in Computer Science
 
+>Student: Francesco Fortunato, 1848527
+
 ## Homework 1 - Visualizing Exam Scores
 
 - **Objective:** Collect and visualize scores of your Bachelor exams, focusing on temporal distribution and performance analysis.
