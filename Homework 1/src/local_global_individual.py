@@ -73,7 +73,7 @@ yticklabels = [*ax.get_yticklabels(), cumulative_weighted_means[-1]]
 ax.set_yticks(yticks)
 
 
-ax.set_title('Temporal Distribution of Exam Scores with Cumulative Weighted Mean and Std Deviation')
+ax.set_title('Temporal Distribution of Exam Scores with Cumulative Means')
 ax.set_xlabel('')
 ax.set_ylabel('Grade')
 ax.legend(loc='upper left')

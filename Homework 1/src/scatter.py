@@ -15,6 +15,8 @@ excel_file = pd.ExcelFile(excel_file_path)
 # List of sheet names (each sheet corresponds to a person's scores)
 sheet_names = excel_file.sheet_names
 
+sheet_names.pop()
+
 # Create an empty list to store DataFrames for each sheet
 dataframes = []
 
@@ -100,7 +102,7 @@ plt.axhline(overall_average_weighted_mean, color='gray', linestyle='-', label=f'
 # Customize plot labels and title
 ax.set_xlabel('')
 ax.set_ylabel('Exam Scores')
-ax.set_title('Individual vs. Group Performance Scatter Plot')
+ax.set_title('Individuals vs. Group Performance Scatter Plot')
 
 # Display the legend
 # Rotate x-axis labels for better readability

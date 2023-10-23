@@ -15,6 +15,8 @@ excel_file = pd.ExcelFile(excel_file_path)
 # List of sheet names (each sheet corresponds to a person's scores)
 sheet_names = excel_file.sheet_names
 
+sheet_names.pop()
+
 # Create an empty list to store DataFrames for each sheet
 dataframes = []
 
@@ -99,7 +101,7 @@ for person, color in zip(sheet_names, custom_palette):
 # Customize plot labels and title
 plt.xlabel('')
 plt.ylabel('Exam Scores')
-plt.title('Box Plot of Exam Scores by Person')
+plt.title('Box Plot of Exam Scores by Person and Group Weighted Average')
 
 # Rotate x-axis labels for better readability
 plt.xticks(rotation=0)

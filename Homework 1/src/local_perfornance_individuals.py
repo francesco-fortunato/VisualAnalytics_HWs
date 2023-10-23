@@ -5,7 +5,7 @@ import matplotlib.dates as mdates
 import os  
 
 # Define a custom color palette
-custom_palette = sns.color_palette("Set1")
+custom_palette = sns.color_palette("Paired")
 
 # Set the custom color palette
 sns.set_palette(custom_palette)
@@ -29,8 +29,21 @@ dataframes = []
 global_performance_data = []
 
 # Define a list of colors for Cumulative Weighted Mean lines
-bar_colors = custom_palette[:len(sheet_names)]
-line_colors = custom_palette[len(sheet_names):]
+bar_colors_mapping = [5, 1, 3, 7]
+line_colors_mapping = [4, 0, 2, 6]
+
+# Reorder bar_colors based on the mapping
+reordered_bar_colors = [custom_palette[i] for i in bar_colors_mapping]
+
+# Reorder line_colors based on the mapping
+reordered_line_colors = [custom_palette[i] for i in line_colors_mapping]
+
+# Use reordered_bar_colors for bar colors
+bar_colors = reordered_bar_colors
+
+# Use reordered_line_colors for line colors
+line_colors = reordered_line_colors
+
 
 # Create a list to store Cumulative Weighted Mean data for each person
 cumulative_weighted_means_data = []
@@ -92,7 +105,7 @@ local_performance_df = global_df.pivot(index='Date', columns='level_0', values='
 local_performance_df.index.name = 'Date'  # Set an appropriate name for the index
 local_performance_df.columns.name = 'Person'  # Set an appropriate name for the columns
 ax = local_performance_df.plot(kind='bar', figsize=(18, 6), alpha=1, color=bar_colors)
-plt.title('Local Performance')
+plt.title('Group and Individuals Local and Global Performance')
 plt.xlabel('')
 plt.ylabel('Mark')
 
