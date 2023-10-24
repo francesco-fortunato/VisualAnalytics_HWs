@@ -133,7 +133,7 @@ handles, labels = ax.get_legend_handles_labels()
 bar_legend = plt.legend(handles[:len(sheet_names)], labels[:len(sheet_names)], title='Weighted Avg Mark', loc='upper right')
 
 # Create a line legend for the lines
-line_legend = plt.legend(handles[len(sheet_names):], labels[len(sheet_names):], title='Mark', loc='upper left')
+line_legend = plt.legend(handles[len(sheet_names):], labels[:len(sheet_names)-1] + ["Group avg"], title='Mark', loc='upper left')
 
 # Adjust the location of the line legend
 plt.gca().add_artist(line_legend)
