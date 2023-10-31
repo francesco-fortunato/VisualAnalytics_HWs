@@ -10,6 +10,6 @@ This is the Homework 2 directory, part of the Visual Analytics course for the ac
 
 ### Reports
 
-- **report.pptx**: A PowerPoint presentation summarizing the expected insights extracted from the Gapminder data.
+- **report.pptx**;
 
-- **report.pdf**: A PDF version of the PowerPoint presentation for easy viewing and sharing. It contains the expected insights and visualizations.
+- **report.pdf**.
