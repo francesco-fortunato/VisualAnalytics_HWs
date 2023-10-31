@@ -26,6 +26,6 @@ This is the Homework 1 directory, which is part of the Visual Analytics course f
 
 ### Reports
 
-- **report.pptx**: A PowerPoint presentation that summarizes the findings and insights from the analysis and visualization of exam scores.
+- **report.pptx**;
 
-- **report.pdf**: A PDF version of the PowerPoint presentation for easy viewing and sharing.
+- **report.pdf**.
